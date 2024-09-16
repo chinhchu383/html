@@ -1,0 +1,58 @@
+.d1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKb2d34ef6wPpOLR6-hasWp_kBmo4LjTgxKg&s);
+    margin-left: 20%;
+    margin-right: 30%;
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px ;
+}
+.d2{
+    height: 1000;
+    width: 250;
+    float: left;
+    
+}
+.d3{
+    height: 500;
+    width: auto;
+    margin-left: 45%;
+}
+.d4{
+
+    width: 250;
+    height: 200;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mClLs9fl_qHrHupdtU7-j1n2ahqTHoGIJQ&s);
+    background-repeat: no-repeat;
+    background-size: 250px 200px;
+    border-radius: 50%;
+
+}
+.d5{
+    width: auto;
+    height: auto;
+}
+.p1{
+    height: auto;
+    width: auto;
+    text-align: center
+
+
+}
+.p2{
+    height: auto;
+    width: auto;
+
+}
+.p3{
+    height: auto;
+    width: auto;
+
+}
+.p4{
+    height: auto;
+    width: auto;
+
+}
+video{
+    height: 250;
+    width: 300;
+}

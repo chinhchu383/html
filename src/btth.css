@@ -1,0 +1,88 @@
+body{
+    border: solid gray 1px;
+    width: 620;
+    height: 530;
+ 
+}
+.p2{
+    width: 390;
+    height: 195;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 100;
+    float: right;
+}
+.p1{
+    
+    margin-left: 380px;
+    margin-top: 158px;
+    background-color: orangered;
+    width: 20px;
+    height: 10px;
+}
+.d1{
+    background-image: url(https://cdn.haitrieu.com/wp-content/uploads/2021/12/logo-hcmus-new.png);
+    background-repeat: no-repeat ;
+    background-size: 200px 200px;
+    border: solid white 5px;
+    height: 200;
+    width: 200;
+    float: left;
+}
+.d2{
+
+    border: solid white 5px;
+    color: black;  
+    float: left;
+    background-color: rgb(170, 167, 167);
+    width: 400px;
+    height: 200px;
+}
+.d3{
+
+    border: solid white 5px;
+    float: left;
+    background-color: black;
+    width: 500px;
+    height: 200px;
+    color: aliceblue;
+}
+.d4{
+
+    border: solid white 5px;
+    float: left;
+    background-color: rgb(255, 102, 0);
+    width: 100px;
+    height: 200px;
+}
+.d5{
+    float: left;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qLTKuHTzFnFWX-DVLf3GyeUXQGhNS8wDdg0y8sj6gRw-R2AVrvCU7hdo-fNL7Z3dKw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 610px  ;
+    border: solid white 5px;
+    width: 610px;
+    height: 100px;
+    text-align: right;
+
+}
+.p3{
+    font-size: 25;
+    margin-left:15 ;
+}
+.p4{
+    position:relative;
+    top: 40;
+    color: green;
+    margin-left:10 ;
+}
+.p5{
+    margin-left:10 ;
+    font-size: 40;
+}
+.p6{
+    color: red;
+    margin-right: 15;
+    text-shadow: 0 0 0.09em white, 0 0 0.09em white;
+
+}

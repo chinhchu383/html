@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(213, 207, 207);
+
+}
+.f{
+    width: 400;
+    height: auto;
+    text-align: center;
+    margin-left: 40%;
+    color: blue;
+    font-size: 40;
+
+}
+form{
+    background-color: aliceblue;
+    width: 400px;
+    height: 500;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+input{
+    border-radius: 5px;
+
+}
+.txtHoTen{
+    float: left;
+}
+.HoTen{
+    width: 180;
+    margin-left: 10;
+    margin-bottom: 10;
+}
+.sdtvamk{
+    width: 374;
+    margin-left: 10;
+    margin-bottom: 10;
+}
+select{
+    width: 115;
+    margin-left: 10;
+    border-radius: 5px;
+}
+
+.gt{
+    float: left;
+    margin-left: 10;
+    width: 115;
+
+    border: 1px solid gray;  
+}
+.in{
+    float: right;
+}
+.note{
+    font-size: 10;
+    margin-left: 10;
+    color: gray;
+}
+.dichvu{
+    font-size: 10;
+    margin-left: 10;
+    color: gray;
+}
+.color{
+    color: blue;
+}
+button{
+    border-radius: 5cm;
+    margin-left: 30%;
+    width: 150;
+    height: 30;
+    background-color: green;
+    font-size: 20;
+    color: aliceblue;
+    
+}
