@@ -7,10 +7,15 @@ body{
     height: auto;
     text-align: center;
     margin-left: 40%;
-    color: blue;
+    color: purple;
     font-size: 40;
 
 }
+.lb{
+    width:50px;
+
+}
+
 form{
     background-color: aliceblue;
     width: 400px;
@@ -20,8 +25,9 @@ form{
 }
 input{
     border-radius: 5px;
-
+    
 }
+
 .txtHoTen{
     float: left;
 }

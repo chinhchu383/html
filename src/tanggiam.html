@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <center>
+        <input onclick="giam()" type="button" value="-">
+        <input id="tg" type="text" value="0">
+        <input onclick="tang()" type="button" value="+">
+    </center>
+    
+    <script>
+        function tang(){
+            var giatri = document.getElementById("tg").value;
+            gt = parseInt(giatri);
+            a = gt + 1;
+            document.getElementById("tg").value = a;
+        }
+        function giam(){
+            var giatri = document.getElementById("tg").value;
+            gt = parseInt(giatri);
+            a = gt - 1;
+            if(a < 0)
+                a = 0;
+            document.getElementById("tg").value = a;
+        }
+        
+    </script>
+</body>
+</html>

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="dky.css">
 </head>
 <body>
+    <script src="dky.js">
+
+    </script>
     <Div class="f">facebook</Div>
     <form action="">
         <div>
@@ -13,120 +16,57 @@
                 <Hr></Hr>
         </div>
         <div class="txtHoTen"></div>
-            <input type="text" placeholder="Họ" class="HoTen">
-            <input type="text" placeholder="Tên" class="HoTen">
+            <input type="text" placeholder="Họ" class="HoTen" id="ho">
+            <input type="text" placeholder="Tên" class="HoTen" id="ten">
             <input type="text" placeholder="Số di động hoặc email" class="sdtvamk">
             <input type="password" placeholder="Mật khẩu" class="sdtvamk">
         </div>
         <div>
-            <p style="font-size: 15;margin-bottom: 5;margin-top: 0;margin-left: 10;">Ngày sinh </p>
-            
-                <select name=""  >
-                    <option value="">Ngày</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                    <option value="">13</option>
-                    <option value="">14</option>
-                    <option value="">15</option>
-                    <option value="">16</option>
-                    <option value="">17</option>
-                    <option value="">18</option>
-                    <option value="">19</option>
-                    <option value="">20</option>
-                    <option value="">21</option>
-                    <option value="">22</option>
-                    <option value="">23</option>
-                    <option value="">24</option>
-                    <option value="">25</option>
-                    <option value="">26</option>
-                    <option value="">27</option>
-                    <option value="">28</option>
-                    <option value="">29</option>
-                    <option value="">30</option>
-                    <option value="">31</option>
+            <p style="font-size: 15;margin-bottom: 5;margin-top: 0;margin-left: 10;">Ngày sinh</p>
+            <select id="ngay" required>
+                <option value="">Ngày</option>
+                <!-- Các option cho ngày -->
+                <script>
+                    for (let i = 1; i <= 31; i++) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
             </select>
-            <select name="" id="">
-                    <option value="thang">Tháng</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-<option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                </select>
-            <select name="" id="" >
-                    <option value="nam">Năm</option>
-                    <option value="">2024</option>
-                    <option value="">2023</option>
-                    <option value="">2022</option>
-                    <option value="">2021</option>
-                    <option value="">2020</option>
-                    <option value="">2019</option>
-                    <option value="">2018</option>
-                    <option value="">2017</option>
-                    <option value="">2016</option>
-                    <option value="">2015</option>
-                    <option value="">2014</option>
-                    <option value="">2023</option>
-                    <option value="">2012</option>
-                    <option value="">2011</option>
-                    <option value="">2010</option>
-                    <option value="">2009</option>
-                    <option value="">2008</option>
-                    <option value="">2007</option>
-                    <option value="">2006</option>
-                    <option value="">2005</option>
-                    <option value="">2004</option>
-                    <option value="">2003</option>
-                    <option value="">2002</option>
-                    <option value="">2001</option>
-                    <option value="">2000</option>
+            <select id="thang" required>
+                <option value="">Tháng</option>
+                <script>
+                    for (let i = 1; i <= 12; i++) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select id="nam" required>
+                <option value="">Năm</option>
+                <!-- Các option cho năm -->
+                <script>
+                    const currentYear = new Date().getFullYear();
+                    for (let i = currentYear; i >= 1900; i--) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
             </select>
         </div>
-        <div >
-            <select name="" id="" style="width: 374;margin-top: 10;">
-                <option value="">Anh ấy: "Chúc anh ấy sinh nhật vui vẻ!!!!"</option>
-                <option value="">Cô ấy: "Chúc cô ấy sinh nhật vui vẻ!!!!"</option>
-            </select>
+        <p style="font-size: 15;margin-bottom: 5;margin-top: 5;margin-left: 10;">Giới tính</p>
+        <div id="gioitinh">
+            <label ><input type="radio" name="gender" value="Nữ"> Nữ</label>
+            <label ><input type="radio" name="gender" value="Nam"> Nam</label>
+            <label ><input type="radio" name="gender" value="Tuỳ chỉnh"> Tuỳ chỉnh</label>
         </div>
-            <p style="font-size: 15;margin-bottom: 5;margin-top: 5;margin-left: 10;">Giới tính</p>
-            <div class="gt" >
-                <label for="">Nữ</label>
-                <input type="radio" class="in">
-            </div>
-            <div class="gt">
-                <label for="">Nam</label>
-                <input type="radio" class="in">
-            </div>
-            <div class="gt">
-                <label for="">Tuỳ chỉnh</label>
-                <input type="radio" class="in">
-            </div> 
+        </select>
             <div class="note">
-                <p>Danh xưng của bạn hiển thị với tất cả mọi người. <color class="color">Tìm hiểu thêm</color>.</p>
+                <p>Danh xưng của bạn hiển thị với tất cả mọi người.</p>
             </div>
             <input type="text" name="" id="" placeholder="Giới tính(không bắt buộc)" style="width: 374;margin-left: 10;height: 40;">
             <div class="dichvu">
-<p>Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook.<color class="color">Tìm Hiểu thêm</color><br>
+                <p>Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook.<color class="color">Tìm Hiểu thêm</color><br>
                 Bằng cách nhấp bào đăng ký. Bạn đồng ý với <color class="color">Điều khoản</color>,<color class="color">Chính sách quền riêng tư</color> và <color class="color">Chính sách cookie của chúng tôi</color>. Bạn có thể nhận được thông báo của chúng tôi qua SMS và huỷ bất cứ lúc nào</p>
             </div>
-            <button class="dky">
+            <button onclick="nut()" class="dky">
                 Đăng ký
             </button>
             <div class="color" style="text-align: center;margin-top: 15;margin-bottom: 15;">
